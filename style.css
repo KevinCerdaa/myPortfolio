@@ -1,0 +1,462 @@
+:root
+{
+    --green-50: #effef4;
+    --green-200: #b8face;
+    --green-400: #4be782;
+    --green-600: #0faa46;
+    --green-800: #126932;
+
+    --gradient-bg: linear-gradient(-45deg, #fafbff 0%, #f3fff4 100%);
+}
+
+@font-face {
+    font-family: DMmono-Regular;
+    src: url(fonts/DM_Mono/DMMono-Regular.ttf);
+}
+@font-face {
+    font-family: DMsans;
+    src: url(fonts/DM_Sans/DMsans.ttf);
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    font-size: 1rem;
+} 
+
+h1, h2, h3
+{
+    font-family: DMsans;
+}
+
+.headerContainer
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+button
+{
+    background: none;
+    border: none;
+}
+
+.header
+{
+    display: flex;
+    justify-content: space-between;
+    width: 70vw;
+}
+
+.header-left
+{
+    color: var(--green-600);
+}
+
+.header-left h1
+{
+    font-size: 2.4em;
+}
+
+.header-right
+{
+    display: flex;
+    align-items: center;
+    gap: 2em;
+}
+
+.iconHeader.headerButton
+{
+    width: auto;
+    height: 2em;
+    color: var(--green-600);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.iconHeader.headerButton:hover
+{
+    color: var(--green-800);
+    transform: translateY(0.3rem) scale(1.15);
+}
+
+.cardProfileContainer
+{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.cardProfile
+{
+    background: var(--gradient-bg);
+    width: 70vw;
+    border-radius: 30px;
+    display: flex;
+    flex-flow: column;
+    box-shadow: 0 5px 4px rgba(0, 0, 0, 0.4);
+}
+
+.topCardProfile
+{
+    display: flex;
+}
+
+.profile-left
+{
+    width: 40%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    padding: 1rem;
+    text-align: center;
+}
+
+.profile-left img
+{
+    border-radius: 50%;
+    width: 90%;
+    margin-bottom: 1rem;
+    border: var(--green-600) 4px solid;
+    height: auto;
+    transition: all 0.3s ease;
+}
+
+.profile-left img:hover
+{
+    transform: rotate(-16deg) scale(1.1);
+    box-shadow: 0 5px 10px rgba(57, 139, 32, 0.829);
+}
+
+.profile-right
+{
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    padding: 2.2rem;
+    font-size: 1.2em;
+    gap: 1em;
+    font-family: DMmono-regular;
+}
+
+.boldText
+{
+    font-weight: bold;
+    color: var(--green-600);
+}
+
+.italicText
+{
+    font-style: italic;
+}
+
+.profileRightButtons
+{
+    display: flex;
+    gap: 2.2em;
+}
+
+.profileButton
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--green-600);
+    border-radius: 10px;
+    width: 12em;
+    height: 2.4em;
+    text-decoration: none;
+    color: var(--green-50);
+    font-size: 1em;
+    transition: all 0.3s ease;
+    font-family: DMsans;
+}
+
+.profileButton:hover
+{
+    background: var(--green-800);
+    color: white;
+    transform: scale(1.1);
+    border-radius: 15px;
+}
+
+.bottomCardProfile
+{
+    display: flex;
+    align-items: center;
+    padding: 1em 2em;
+}
+
+.bottomButtons
+{
+    display: flex;
+    gap: 2em;
+}
+
+.icon.cardProfileButton
+{
+    width: auto;
+    height: 2.2em;
+    fill: var(--green-600);
+    transition: all 0.3s ease;
+}
+
+.icon.cardProfileButton:hover
+{
+    fill: var(--green-800);
+    transform: translateY(-0.3rem);
+}
+
+.mailZone
+{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--green-600);
+}
+
+.mailZone p
+{
+    font-size: 1.2em;
+    font-family: DMsans;
+    font-weight: bold;
+}
+
+.emailIcon
+{
+    width: 1.5em;
+}
+
+.technologiesContainer
+{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.technologies
+{
+    padding: 2rem;
+    width: 70vw;
+    border-radius: 30px;
+    display: flex;
+    flex-flow: column;
+    gap: 1.5rem;
+}
+
+.technologies h2
+{
+    font-size: 2em;
+}
+
+.cardTechonlogies
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card
+{
+    background: var(--gradient-bg);
+    border-radius: 30px;
+    width: 40%;
+    box-shadow: 0 5px 4px rgba(0, 0, 0, 0.4);
+}
+
+.technologiesList
+{
+    height: 10em;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+}
+
+.techIcon
+{
+    width: 3em;
+    height: 3em;
+    fill: #008000;
+}
+
+.buttonTechnologiesPart
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--green-600);
+}
+
+.iconSmall
+{
+    width: 1.8em;
+}
+
+.leftCardContainer
+{
+    padding: 2rem;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+
+.rightCardContainer
+{
+    padding: 2rem;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+
+.projectsContainer
+{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.projects
+{
+    padding: 2rem;
+    width: 70vw;
+    border-radius: 30px;
+    display: flex;
+    flex-flow: column;
+    gap: 1.5rem;
+}
+
+.projects h2
+{
+    font-size: 2em;
+}
+
+.cardsOfProjects
+{
+    display: flex;
+    flex-flow: column;
+    gap: 2rem;
+}
+
+.project
+{
+    background: var(--gradient-bg);
+    display: flex;
+    justify-content: space-between;
+    border-radius: 30px;
+    box-shadow: 0 5px 4px rgba(0, 0, 0, 0.4);
+}
+
+.imageCardContainer
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    padding: 2em;
+}
+
+.imageCardContainer img
+{
+    width: 100%;
+    border-radius: 15px;
+}
+
+.textCardContainer
+{
+    width: 50%;
+    display: flex;
+    flex-flow: column;
+    padding: 2em;
+}
+
+.textCardContainer h3
+{
+    font-size: 2em;
+}
+
+.textCardContainer p
+{
+    font-size: 1.2em;
+    font-family: DMsans;
+}
+
+.projectButtons
+{
+    margin-top: 1em;
+    display: flex;
+    gap: 1em;
+}
+
+.buttonLayer
+{
+    background: var(--green-600);
+    border-radius: 5px;
+    width: 2.5em;
+    height: 2.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    transition: all 0.3s ease;
+}
+
+.buttonLayer:hover
+{
+    transform: scale(1.15) rotate(-10deg);
+    background: var(--green-800);
+}
+
+.technologiesIcons
+{
+    display: flex;
+    gap: 1em;
+    margin-bottom: 2em;
+}
+
+.technologieProjectIcon
+{
+    width: 1.3em;
+    height: 1.3em;
+    fill: black;
+}
+
+.technologieProjectIcon.buttonIcon
+{
+    width: 1.5em;
+    height: 1.5em;
+    fill: rgb(255, 255, 255);
+}
+
+@media (max-width: 1280px) 
+{
+    body
+    {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 900px) 
+{
+    body
+    {
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 700px) 
+{
+    body
+    {
+        font-size: 0.6rem;
+    }
+}
